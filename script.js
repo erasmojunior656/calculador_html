@@ -37,7 +37,7 @@ function divisao(){
 
     if(numero_dois == 0){
 
-    document.getElementById('resultado').textContent = 'Não pode dividir por 0!';
+    alert("Não pode dividir por 0");
     return;
 }
 
@@ -45,4 +45,20 @@ function divisao(){
     
     document.getElementById('resultado').textContent = 'Resultado: ' + soma_numero;
 
+}
+
+function maior(){
+
+    let numero_um = parseFloat(document.getElementById('primeiro').value);
+    let numero_dois = parseFloat(document.getElementById('segundo').value);
+
+    if(numero_um > numero_dois){
+    document.getElementById('resultado').textContent = 'O maior número é ' + numero_um;
+}
+    if(numero_um < numero_dois){
+    document.getElementById('resultado').textContent = 'O maior número é ' + numero_dois;
+}
+    if(numero_um == numero_dois){
+    document.getElementById('resultado').textContent = 'Os números são iguais';
+}
 }
